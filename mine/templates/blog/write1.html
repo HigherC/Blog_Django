@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write a blog</title>
+</head>
+<body>
+<form action="{% url 'save' %}" method="post">
+    {% csrf_token%}
+    题  目：<input type="text" name="topic"/><br>
+    作者名：<input type="text" name="author"/><br><br>
+    <textarea name="content" style="height:500px;width:500px;"></textarea><br>
+    确认提交：<input type="submit">
+</form>
+</body>
+</html>

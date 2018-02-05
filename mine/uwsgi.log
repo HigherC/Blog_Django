@@ -1,0 +1,542 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:31:58 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xad19f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "mine/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3323)
+spawned uWSGI worker 1 (pid: 3324, cores: 2)
+spawned uWSGI worker 2 (pid: 3325, cores: 2)
+spawned uWSGI worker 3 (pid: 3326, cores: 2)
+spawned uWSGI worker 4 (pid: 3327, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 0 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:33:54 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40041 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1cd6ac0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "mine/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3614)
+spawned uWSGI worker 1 (pid: 3615, cores: 2)
+spawned uWSGI worker 2 (pid: 3616, cores: 2)
+spawned uWSGI worker 3 (pid: 3617, cores: 2)
+spawned uWSGI worker 4 (pid: 3618, cores: 2)
+spawned uWSGI http 1 (pid: 3619)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/1] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:58 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/2] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:58 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/3] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:58 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3618|app: -1|req: -1/4] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:58 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/5] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:59 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/6] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:59 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/7] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:59 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/8] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:59 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/9] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:59 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/10] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:59 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/11] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:33:59 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/12] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:33:59 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/13] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:00 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/14] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:00 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/15] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:00 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/16] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:00 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3618|app: -1|req: -1/17] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:00 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3617|app: -1|req: -1/18] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:00 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3618|app: -1|req: -1/19] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:00 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3617|app: -1|req: -1/20] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:00 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/21] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:00 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/22] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:00 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3617|app: -1|req: -1/23] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:01 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3618|app: -1|req: -1/24] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:01 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3618|app: -1|req: -1/25] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:01 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3617|app: -1|req: -1/26] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:01 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3616|app: -1|req: -1/27] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:34:01 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3615|app: -1|req: -1/28] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:34:01 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3619)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:34:55 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:7788 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37713 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd15ac0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "mine/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3736)
+spawned uWSGI worker 1 (pid: 3737, cores: 2)
+spawned uWSGI worker 2 (pid: 3738, cores: 2)
+spawned uWSGI worker 3 (pid: 3739, cores: 2)
+spawned uWSGI worker 4 (pid: 3740, cores: 2)
+spawned uWSGI http 1 (pid: 3741)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 722 bytes} [Fri Jan 26 15:35:01 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/2] 127.0.0.1 () {38 vars in 701 bytes} [Fri Jan 26 15:35:01 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/3] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:35:03 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/4] 127.0.0.1 () {42 vars in 754 bytes} [Fri Jan 26 15:35:03 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/5] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:35:03 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/6] 127.0.0.1 () {42 vars in 754 bytes} [Fri Jan 26 15:35:03 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/7] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:03 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/8] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/9] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:04 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/10] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/11] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:04 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/12] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/13] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:04 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/14] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/15] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:04 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/16] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/17] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:04 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/18] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:04 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/19] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:05 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/20] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:05 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/21] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:05 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/22] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:05 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/23] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:05 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/24] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:05 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/25] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:33 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/26] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:34 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/27] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:34 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/28] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:34 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3738|app: -1|req: -1/29] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:34 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/30] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:34 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/31] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:34 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/32] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:34 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/33] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:34 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3738|app: -1|req: -1/34] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:35 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/35] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:35 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/36] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:35 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/37] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:35 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/38] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:35 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3740|app: -1|req: -1/39] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:36 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/40] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:36 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/41] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:36 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/42] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:36 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 3739|app: -1|req: -1/43] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:35:36 2018] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 3737|app: -1|req: -1/44] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:35:37 2018] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3741)
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:43:18 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:7788 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36583 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1e08c40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1e08c40 pid: 4000 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4000)
+spawned uWSGI worker 1 (pid: 4003, cores: 2)
+spawned uWSGI worker 2 (pid: 4004, cores: 2)
+spawned uWSGI worker 3 (pid: 4005, cores: 2)
+spawned uWSGI worker 4 (pid: 4006, cores: 2)
+spawned uWSGI http 1 (pid: 4007)
+[pid: 4003|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:43:24 2018] GET / => generated 74 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 755 bytes} [Fri Jan 26 15:43:24 2018] GET /favicon.ico => generated 85 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 2/3] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:43:24 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 3/4] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:43:25 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4005|app: 0|req: 1/5] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:43:25 2018] GET / => generated 74 bytes in 64 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4003|app: 0|req: 2/6] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:26 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 4/7] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:26 2018] GET / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4003|app: 0|req: 3/8] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:26 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 5/9] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:26 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4003|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:26 2018] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4005|app: 0|req: 2/11] 127.0.0.1 () {40 vars in 753 bytes} [Fri Jan 26 15:43:27 2018] GET / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 6/12] 127.0.0.1 () {38 vars in 730 bytes} [Fri Jan 26 15:43:32 2018] GET /blog => generated 78 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4005|app: 0|req: 3/13] 127.0.0.1 () {40 vars in 761 bytes} [Fri Jan 26 15:43:48 2018] GET /blog => generated 78 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 7/14] 127.0.0.1 () {40 vars in 762 bytes} [Fri Jan 26 15:43:48 2018] GET /blog => generated 78 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 8/15] 127.0.0.1 () {40 vars in 762 bytes} [Fri Jan 26 15:43:49 2018] GET /blog => generated 78 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 9/16] 127.0.0.1 () {40 vars in 762 bytes} [Fri Jan 26 15:43:49 2018] GET /blog => generated 78 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 10/17] 127.0.0.1 () {40 vars in 762 bytes} [Fri Jan 26 15:43:49 2018] GET /blog => generated 78 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4006|app: 0|req: 1/18] 127.0.0.1 () {40 vars in 762 bytes} [Fri Jan 26 15:43:49 2018] GET /blog => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 11/19] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:49 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4003|app: 0|req: 5/20] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:49 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4005|app: 0|req: 4/21] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:49 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4005|app: 0|req: 5/22] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4003|app: 0|req: 6/23] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4003|app: 0|req: 7/24] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4003|app: 0|req: 8/25] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 12/26] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 13/27] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:50 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4003|app: 0|req: 9/28] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:51 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4006|app: 0|req: 2/29] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:51 2018] GET /blog/ => generated 522 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 14/30] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:51 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4005|app: 0|req: 6/31] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:51 2018] GET /blog/ => generated 79 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 15/32] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:52 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4004|app: 0|req: 16/33] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:52 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4004|app: 0|req: 17/34] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:43:56 2018] GET /blog/ => generated 79 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4007)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:44:04 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:7788 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33039 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xb5bc40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xb5bc40 pid: 4048 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4048)
+spawned uWSGI worker 1 (pid: 4051, cores: 2)
+spawned uWSGI worker 2 (pid: 4052, cores: 2)
+spawned uWSGI worker 3 (pid: 4053, cores: 2)
+spawned uWSGI worker 4 (pid: 4054, cores: 2)
+spawned uWSGI http 1 (pid: 4055)
+[pid: 4051|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:44:06 2018] GET /blog/ => generated 522 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 778 bytes} [Fri Jan 26 15:44:08 2018] GET /blog/1 => generated 1043 bytes in 72 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 4051|app: 0|req: 3/3] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:27 2018] GET / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4052|app: 0|req: 1/4] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:27 2018] GET / => generated 74 bytes in 41 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4051|app: 0|req: 4/5] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:27 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4051|app: 0|req: 5/6] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:28 2018] GET / => generated 74 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 6/7] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:28 2018] GET / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4052|app: 0|req: 2/8] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:28 2018] GET / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 7/9] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:52 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4052|app: 0|req: 3/10] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:53 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4054|app: 0|req: 1/11] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:53 2018] GET / => generated 497 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 8/12] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:54 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4053|app: 0|req: 1/13] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:54 2018] GET / => generated 497 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4052|app: 0|req: 4/14] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:55 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4052|app: 0|req: 5/15] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:55 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4052|app: 0|req: 6/16] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:56 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4053|app: 0|req: 2/17] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:56 2018] GET / => generated 497 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 9/18] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:57 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4051|app: 0|req: 10/19] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:48:58 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 11/20] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:49:00 2018] GET / => generated 74 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4054|app: 0|req: 2/21] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:49:00 2018] GET / => generated 497 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4052|app: 0|req: 7/22] 127.0.0.1 () {40 vars in 763 bytes} [Fri Jan 26 15:49:02 2018] GET /1 => generated 75 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4051|app: 0|req: 12/23] 127.0.0.1 () {40 vars in 763 bytes} [Fri Jan 26 15:49:06 2018] GET /2 => generated 75 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4055)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jan 26 15:50:10 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:7788 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36689 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x26eda60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26eda60 pid: 4226 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4226)
+spawned uWSGI worker 1 (pid: 4229, cores: 2)
+spawned uWSGI worker 2 (pid: 4230, cores: 2)
+spawned uWSGI worker 3 (pid: 4231, cores: 2)
+spawned uWSGI worker 4 (pid: 4232, cores: 2)
+spawned uWSGI http 1 (pid: 4234)
+[pid: 4229|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 733 bytes} [Fri Jan 26 15:50:16 2018] GET /blog/ => generated 79 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:18 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 1/3] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:18 2018] GET /blog/ => generated 79 bytes in 52 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 3/4] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:18 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:19 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 3/6] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:19 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 4/7] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:19 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4231|app: 0|req: 1/8] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:19 2018] GET /blog/ => generated 79 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 5/9] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:20 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4230|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:20 2018] GET /blog/ => generated 79 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 6/11] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:20 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 7/12] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:20 2018] GET /blog/ => generated 79 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4231|app: 0|req: 2/13] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:20 2018] GET /blog/ => generated 79 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4232|app: 0|req: 1/14] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:21 2018] GET /blog/ => generated 79 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 8/15] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:21 2018] GET /blog/ => generated 79 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 5/16] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:21 2018] GET /blog/ => generated 79 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4232|app: 0|req: 2/17] 127.0.0.1 () {40 vars in 764 bytes} [Fri Jan 26 15:50:21 2018] GET /blog/ => generated 79 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 6/18] 127.0.0.1 () {38 vars in 723 bytes} [Fri Jan 26 15:50:27 2018] GET / => generated 497 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4230|app: 0|req: 7/19] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:29 2018] GET / => generated 497 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 9/20] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:29 2018] GET / => generated 497 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 10/21] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:29 2018] GET / => generated 497 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 8/22] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:30 2018] GET / => generated 497 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 11/23] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:30 2018] GET / => generated 497 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4231|app: 0|req: 3/24] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 12/25] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 13/26] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4230|app: 0|req: 9/27] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 10/28] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 14/29] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:31 2018] GET / => generated 497 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4231|app: 0|req: 4/30] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:32 2018] GET / => generated 497 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 15/31] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:32 2018] GET / => generated 497 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 16/32] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:32 2018] GET / => generated 497 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 17/33] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:50:32 2018] GET / => generated 497 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4231|app: 0|req: 5/34] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:53:47 2018] GET / => generated 497 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4229|app: 0|req: 18/35] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 15:53:48 2018] GET / => generated 497 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4230|app: 0|req: 11/36] 127.0.0.1 () {40 vars in 754 bytes} [Fri Jan 26 16:14:37 2018] GET / => generated 497 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 4229|app: 0|req: 19/37] 127.0.0.1 () {38 vars in 701 bytes} [Fri Jan 26 16:43:03 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+Gracefully killing worker 2 (pid: 4230)...
+gateway "uWSGI http 1" has been buried (pid: 4234)
+...brutally killing workers...
+worker 2 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 1 buried after 1 seconds
+worker 3 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/chenxiao/project/mine
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:36689)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Jan 27 01:04:55 2018] ***
+compiled with version: 5.4.0 20160609 on 26 January 2018 15:29:03
+os: Linux-4.13.0-26-generic #29~16.04.2-Ubuntu SMP Tue Jan 9 22:00:44 UTC 2018
+nodename: chenxiao-ZHAOYANG-E42-80
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/chenxiao/project/mine
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/chenxiao/project/mine
+your processes number limit is 28874
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:7788 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:37683 (port auto-assigned) fd 4
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1cf8870
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1cf8870 pid: 4226 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 4226)
+spawned uWSGI worker 1 (pid: 9615, cores: 2)
+spawned uWSGI worker 2 (pid: 9616, cores: 2)
+spawned uWSGI worker 3 (pid: 9617, cores: 2)
+spawned uWSGI worker 4 (pid: 9618, cores: 2)
+spawned uWSGI http 1 (pid: 9619)

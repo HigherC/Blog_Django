@@ -1,0 +1,90 @@
+body{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    h1#head{
+        background-color: #00FFFF;
+        font-family: Microsoft Yahei;
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    /*  index   */
+    div#index{
+        background-color: #00FFFF;
+        height: 37px;
+        /*background-color: white;   不设置这条背景颜色会继承/*/
+    }
+
+    div#index a:link,div#index a:visited{
+        display: block;
+        text-decoration: none;
+        width:200px;
+        font-weight: bold;
+        background-color: grey;
+        text-align: center;
+        color: black;
+    }
+
+    div#index a:hover,div#index a:active{
+        background-color:#00FFFF;
+        color: red;
+    }
+
+    div#index ul{
+        margin: 0 50px;
+        list-style-type: none;
+    }
+
+    div#index li{
+        margin: 0px;
+        font-size: 25px;
+        float:left;
+    }
+
+
+h1#topic{
+    background-color: #DCDCDC;
+    word-wrap:break-word;
+    border-left: 5px red solid;
+    margin: 10px 0 0 0;
+}
+
+
+p#author,p#time,p#visit{
+    color: #B0C4DE;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+div#content{
+    padding: 10px;
+    height: auto;
+    width: 800px;
+    background-color: white;
+}
+
+div#content p{
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+div#comment{
+    margin-top: 10px;
+}
+
+div#comment img{
+    height: 20px;
+    width: 20px;
+}
+
+div#comment a{
+    width:40px;
+    text-decoration: none;
+    display: block;
+    color: black;
+
+}

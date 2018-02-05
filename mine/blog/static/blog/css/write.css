@@ -1,0 +1,62 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1#head{
+    background-color: #00FFFF;
+    font-family: Microsoft Yahei;
+    text-align: center;
+    margin: 0px;
+
+}
+
+/*  index   */
+div#index{
+    background-color: #00FFFF;
+    height: 37px;
+    /*background-color: white;   不设置这条背景颜色会继承/*/
+}
+
+div#index a:link,div#index a:visited{
+    display: block;
+    text-decoration: none;
+    width:200px;
+    font-weight: bold;
+    background-color: grey;
+    text-align: center;
+    color: black;
+}
+
+div#index a:hover,div#index a:active{
+    background-color:#00FFFF;
+    color: red;
+}
+
+div#index ul{
+    margin: 0 50px;
+    list-style-type: none;
+}
+
+div#index li{
+    margin: 0px;
+    font-size: 25px;
+    float:left;
+}
+
+
+/* write */
+
+input.content{
+    border:inset grey 2px;
+    margin-top:10px;
+    height: 30px;
+    font-size: 20px;
+}
+textarea{
+    border:inset grey 2px;
+    margin-top:10px;
+    width:500px;
+    height: 400px;
+    font-size: 20px;
+}

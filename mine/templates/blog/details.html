@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/details.css' %}"/>
+</head>
+<body>
+	<div>
+		<h1 id="head">欢迎浏览陈枭的个人博客</h1>
+	</div>
+
+	<div id="index">
+		<ul>
+			<li><a href="{% url 'index' %}">首   页</a></li>
+			<li><a href="{% url 'write' %}">编写博客</a></li>
+			<li><a href="#">关于作者</a></li>
+			<li><a href="#">获取源码</a></li>
+		</ul>
+	</div>
+	<h1 id='topic'>{{ topic }}</h1>
+	<p id='author'>{{ author }}</p>
+	<p id='time'>发表于 {{ pub_date}}</p>
+	<p id='visit'>{{ read }}访问量</p>
+	<div id='content'>
+			<p>{{ content|linebreaks}}</p>
+	</div>
+
+	<form action="{% url 'comment' %}" method="post">
+    	{% csrf_token %}
+    	赞一个{{good}}<input checked type="radio" name="choice" value="good">
+    	踩一个{{bad}}<input type="radio" name="choice" value="bad">
+    	<input type="hidden" name="essay_id" value="{{ essay_id }}">
+		<input type="submit" value="提交评价">
+	</form>
+</body>
+</html>

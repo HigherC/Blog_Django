@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/index.css'%}" />
+    <title>关于作者</title>
+</head>
+<body>
+    <div>
+		<h1 id="head">欢迎浏览陈枭的个人博客</h1>
+	</div>
+
+	<div id="index">
+		<ul>
+			<li><a href="{% url 'index' %}">首   页</a></li>
+			<li><a href="{% url 'write' %}">编写博客</a></li>
+			<li><a href="{% url 'author'%}">关于作者</a></li>
+			<li><a href="#">获取源码</a></li>
+		</ul>
+	</div>
+
+    <p>会一点python</p>
+    <p>懂一点linux操作系统</p>
+    <p>了解一点前端</p>
+    <p>总之还是挺菜的</p>
+<img src="{% static 'blog/img/1.jpg'%}">
+</body>
+</html>

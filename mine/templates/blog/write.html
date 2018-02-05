@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{%static 'blog/css/write.css'%}" />
+	<title>编写博客</title>
+</head>
+<body>
+	<div>
+		<h1 id="head">欢迎浏览陈枭的个人博客</h1>
+	</div>
+
+	<div id="index">
+		<ul>
+			<li><a href="{% url 'index' %}">首   页</a></li>
+			<li><a href="{% url 'write' %}">编写博客</a></li>
+			<li><a href="{% url 'author'%}">关于作者</a></li>
+			<li><a href="#">获取源码</a></li>
+		</ul>
+	</div>
+	
+	<div id='input'>
+		<form action="{% url 'save' %}" method="post">
+            {% csrf_token%}
+			<input class="content" type="text" name="topic" value="请输入标题"><br>
+			<input class="content" type="text" name="author" value="请输入作者名称"><br>
+			<textarea name='content' value='请输入内容'></textarea><br>
+			<input type="submit" value="完成">
+		</form>
+	</div>
+	
+</body>
+</html>
